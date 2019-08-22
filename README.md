@@ -354,25 +354,13 @@ A license is the price of the agreement for the user and ‘Categories’ are ca
 
 The ‘Note’ symbol \(exclamation mark in warning triangle\) is the disclaimer.
 
-### Forms
-
-This is where the forms are drawn up. With the forms, it is possible to request certain data within LegalThings.
-
-![](.gitbook/assets/image21.png)
-
-With the ‘New form’ button, the LegalThings customer creates a new form. Existing forms can be adjusted by clicking on a form. As an example, we take the form for adding a client. This form is called ‘client organization’. Adjusting these fields is done in the same way in which fields are programmed when drawing up a document, ![](.gitbook/assets/image17.png)
-
-### Adding filters
-
-![](.gitbook/assets/image13.png)
-
-It is possible to have filters made by LegalThings. Just like drawing up forms, this is done under the ‘Forms’ tab. By searching for a ‘value’, it becomes easier to search in processes, clients, affiliates and documents.
-
-If these filters need to be adjusted, this can be done by contacting LegalThings. You can do so via the contact details page under the table of contents page.
+## Standard Articles
 
 ### ![](.gitbook/assets/image14.png)
 
 Standard articles are pieces of text that often appear in agreements. They can be placed in the text when creating a template. Using the ‘+ New article’ button, a standard article can be created. A standard article can consist of just one line or an entire document. This makes the life of a document builder a lot easier.
+
+## Standard Fields
 
 ### ![Standard fields](.gitbook/assets/image12.png)
 
@@ -380,7 +368,7 @@ Standard fields are one or more fields that often occur in agreements. They can 
 
 ### ![](.gitbook/assets/image16.png)
 
-### Categories
+## Categories
 
 Categories can be linked to agreements so that the agreements can easily be found by the user on the website. A category consists of a name and an icon. The code of an icon can be found on the website: [_https://design.google.com/icons/_](https://design.google.com/icons/). If an icon is clicked, the code can be seen. A pop-up with a code similar to this then appears at the bottom of the site: ‘&lt;i class="material-icons"&gt;**&\#xE84D**;&lt;/i&gt;’. The bold part of this is the code for the categories.
 

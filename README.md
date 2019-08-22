@@ -17,149 +17,92 @@ A template consists of a step-by-step list, the form, and the text itself. In th
 ### Concepts
 
 <table>
-  <colgroup>
-    <col width="33.3%" />
-    <col width="66.7%" />
-  </colgroup>
   <thead>
-    <tr class="header">
-      <th>Document builder</th>
-      <th>The environment in which the documents/templates are created.</th>
+    <tr>
+      <th style="text-align:left">Document builder</th>
+      <th style="text-align:left">The environment in which the documents/templates are created.</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="odd">
-      <td>
-        <p>Form</p>
-      </td>
-      <td>
-        <p>List of all steps and fields, is on the left side of a template.</p>
-      </td>
+    <tr>
+      <td style="text-align:left">Form</td>
+      <td style="text-align:left">List of all steps and fields, is on the left side of a template.</td>
     </tr>
-    <tr class="even">
-      <td>
-        <p>If-statement</p>
-      </td>
-      <td>
-        <p>An if/then condition. If X, then Y</p>
-      </td>
+    <tr>
+      <td style="text-align:left">If-statement</td>
+      <td style="text-align:left">An if/then condition. If X, then Y</td>
     </tr>
-    <tr class="odd">
-      <td>
-        <p>Mustaches</p>
-      </td>
-      <td>
-        <p>To dynamically create a document, mustaches {{ }} are used. To make a field editable in the text, the name of the field must be covered by two mustaches on both sides: {{ field }}. Without mustaches, the fields are not usable.</p>
-      </td>
+    <tr>
+      <td style="text-align:left">Mustaches</td>
+      <td style="text-align:left">To dynamically create a document, mustaches {{ }} are used. To make a
+        field editable in the text, the name of the field must be covered by two
+        mustaches on both sides: {{ field }}. Without mustaches, the fields are
+        not usable.</td>
     </tr>
-    <tr class="even">
-      <td>
-        <p>Operator</p>
-      </td>
-      <td>
-        <p>A symbol that is used with variables to perform various functions. Think of arithmetic or logical functions. The most commonly used operators are explained below:</p>
-        <p><strong>Arithmetic operators</strong></p>
-        <ul>
-          <li>
-            <ul>
-              <li>Add</li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li>Subtract</li>
-            </ul>
-          </li>
-          <li>
-            <p>* Multiply</p>
-          </li>
-          <li>
-            <p>/ Divide</p>
-          </li>
-        </ul>
-        <p><strong>Comparison operators</strong></p>
-        <ul>
-          <li>
-            <p>== is equal to</p>
-          </li>
-          <li>
-            <p>!= is not equal to</p>
-          </li>
-          <li>
-            <p>&gt; is greater than</p>
-          </li>
-          <li>
-            <p>&lt; is smaller than</p>
-          </li>
-          <li>
-            <p>&gt;= is greater than or &gt; equal to</p>
-          </li>
-          <li>
-            <p>&lt;= is smaller than or &gt; equal to</p>
-          </li>
-        </ul>
-        <p><strong>Logical operators</strong></p>
-        <ul>
-          <li>
-            <p>&amp;&amp; AND (&quot;and&quot;)</p>
-          </li>
-          <li>
-            <p>|| OR (&quot;or&quot;)</p>
-          </li>
-          <li>
-            <p>! NOT (&quot;not&quot;)</p>
-          </li>
-        </ul>
-        <p><strong>String operators</strong></p>
-        <p>With the plus symbol (+), we can combine two strings.</p>
-        <p>For example:<br />
-          text1=&quot;Two strings &quot;;<br />
-          text2=&quot;combined&quot;;<br />
-          text3=text1+text2;
+    <tr>
+      <td style="text-align:left">Operator</td>
+      <td style="text-align:left">
+        <p>A symbol that is used with variables to perform various functions. Think
+          of arithmetic or logical functions. The most commonly used operators are
+          explained below:</p>
+        <p></p>
+        <p><b>Arithmetic operators</b>
         </p>
-        <p>The content of variable text 3 is now: &quot;Two strings combined&quot;.</p>
+        <ul>
+          <li><code>+</code> Add</li>
+          <li><code>-</code> Subtract</li>
+          <li><code>*</code> Multiply</li>
+          <li><code>/</code> Divide</li>
+        </ul>
+        <p><b>Comparison operators</b>
+        </p>
+        <ul>
+          <li><code>==</code> is equal to</li>
+          <li><code>!=</code> is not equal to</li>
+          <li><code>&gt;</code> is greater than</li>
+          <li><code>&lt;</code> is smaller than</li>
+          <li><code>&gt;=</code> is greater than or &gt; equal to</li>
+          <li><code>&lt;=</code> is smaller than or &gt; equal to</li>
+        </ul>
+        <p><b>Logical operators</b>
+        </p>
+        <ul>
+          <li><code>&amp;&amp;</code> AND (&quot;and&quot;)</li>
+          <li><code>||</code> OR (&quot;or&quot;)</li>
+          <li><code>!</code> NOT (&quot;not&quot;)</li>
+        </ul>
+        <p><b>String operators</b>
+        </p>
+        <p>With the plus symbol (<code>+</code>), we can combine two strings.</p>
+        <p>For example:
+          <br /><code> text1 = &quot;Two strings &quot;<br /> text2 = &quot;combined&quot;<br /> text3 = text1 + text2</code>
+        </p>
+        <p>The content of variable text 3 is now: <code>&quot;Two strings combined&quot;</code>.</p>
       </td>
     </tr>
-    <tr class="odd">
-      <td>
-        <p>Programming</p>
-      </td>
-      <td>
-        <p>Term for making pieces of text in a template dynamic.</p>
-      </td>
+    <tr>
+      <td style="text-align:left">Programming</td>
+      <td style="text-align:left">Term for making pieces of text in a template dynamic.</td>
     </tr>
-    <tr class="even">
-      <td>
-        <p>Template</p>
-      </td>
-      <td>
-        <p>A template is a digitized document.</p>
-      </td>
+    <tr>
+      <td style="text-align:left">Template</td>
+      <td style="text-align:left">A template is a digitized document.</td>
     </tr>
-    <tr class="odd">
-      <td>
-        <p>Text</p>
-      </td>
-      <td>
-        <p>The text is understood to mean the text of a template and is to the right of the form.</p>
-      </td>
+    <tr>
+      <td style="text-align:left">Text</td>
+      <td style="text-align:left">The text is understood to mean the text of a template and is to the right
+        of the form.</td>
     </tr>
-    <tr class="even">
-      <td>
-        <p>User</p>
-      </td>
-      <td>
-        <p>The user is understood to mean the end user of the software.</p>
-      </td>
+    <tr>
+      <td style="text-align:left">User</td>
+      <td style="text-align:left">The user is understood to mean the end user of the software.</td>
     </tr>
   </tbody>
-</table>
+</table>## Steps
 
-## Steps
+The document is completed according to the steps. The steps contain all fields.
 
-The document is completed according to the steps. The steps contain all fields.![](.gitbook/assets/image5.png){width="0.9791666666666666in" height="0.375in"}
-
-To create a step, the ‘Step’ button must be clicked.
+![](.gitbook/assets/image5.png)To create a step, the ‘Step’ button must be clicked.
 
 The step specifications can then be entered. This looks as follows:
 
@@ -171,7 +114,7 @@ The label is the name of the step, visible to the user
 
 The field group is the subdivision of the different steps. This is used to invoke the fields in the text.
 
-Suppose you give step 1 the field group 'introduction' and step 2 the field group ‘data’, then all fields from step 1 in the text are invoked with  and step 2 . This ensures that one field can have the same field name in both step 1 and step 2 without the same being entered in both fields.
+Suppose you give step 1 the field group 'introduction' and step 2 the field group ‘data’, then all fields from step 1 in the text are invoked with and step 2 . This ensures that one field can have the same field name in both step 1 and step 2 without the same being entered in both fields.
 
 ### Scroll to article
 
@@ -331,13 +274,13 @@ It is possible to adjust the properties of a cell. To do so, you need to click o
 
 In the text of a template, words/pieces of text can be made dynamic with the help of a statement. This is possible by using fields and their outcomes.
 
-_Example:_ Every dynamic piece of text is opened using the following code: 
+_Example:_ Every dynamic piece of text is opened using the following code:
 
-Every dynamic piece of text is closed using the following code:  or 
+Every dynamic piece of text is closed using the following code: or
 
 This translates into the following statement:
 
-This sentence must be made dynamic/variable. 
+This sentence must be made dynamic/variable.
 
 Field1 is a Selection list with choices Yes and No in this case.
 
@@ -345,7 +288,7 @@ This means that when the user puts field1 to Yes, the sentence appears, and with
 
 The same is possible with a \^ instead of a \# but this reverses the statement.
 
- This sentence must be made dynamic/variable. 
+This sentence must be made dynamic/variable.
 
 Now, the sentence will only NOT appear if Yes is selected with field1 and WILL appear with all other possible options.
 
@@ -357,7 +300,7 @@ Suppose there is a list with four sentences that are numbered 1 through 4. If se
 
 Creating a statement is possible with the help of the following fields: Selection list, Check box, Likert scale and Number with unit.
 
-For an option group, the following code needs to be used:  Option 1 may be variable .
+For an option group, the following code needs to be used: Option 1 may be variable .
 
 So instead of an operator, you use .includes\(“THE CHOICE”\). The choice must be between quotation marks \(“\) here, even if it is a number.
 
@@ -433,9 +376,9 @@ Suppose that Article 1 from the previous example contains a reference to Article
 
 A number of additional functions are possible with regard to the date. It is possible to add or subtract a period from a chosen date in a Date field and to display it in the text. This can be done with the help of the following codes:
 
-**Add** –  Adds a year to the date  Here, ‘duration’ is a Number with unit field with a period as the entered value, for instance: ‘week’, ‘month’ or ‘year’. The function automatically records the period and adds it to the date. The same applies to subtractions. The periods are also recognized in English.
+**Add** – Adds a year to the date Here, ‘duration’ is a Number with unit field with a period as the entered value, for instance: ‘week’, ‘month’ or ‘year’. The function automatically records the period and adds it to the date. The same applies to subtractions. The periods are also recognized in English.
 
-**Subtract** –  Subtracts a year from the date
+**Subtract** – Subtracts a year from the date
 
 Date fields can use the additional function by using [_moment.js_](http://momentjs.com/docs/).
 

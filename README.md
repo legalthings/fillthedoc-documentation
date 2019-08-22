@@ -92,7 +92,7 @@ Concepts
 |                                   |                                   |
 |                                   | **String operators**              |
 |                                   |                                   |
-|                                   | With the plus symbol (+), we can |
+|                                   | With the plus symbol (+), we can  |
 |                                   | combine two strings.              |
 |                                   |                                   |
 |                                   | For example:\                     |
@@ -131,7 +131,7 @@ To create a step, the ‘Step’ button must be clicked.
 The step specifications can then be entered. This looks as
 follows:
 
-Label![](.gitbook/assets/image3.png){width="3.3881944444444443in" height="4.596527777777778in"}
+![Label](.gitbook/assets/image3.png)
 -------------------------------------------------------------------------------------
 
 The label is the name of the step, visible to the user
@@ -392,7 +392,7 @@ Table
 This section explains the options and limitations of
 the table.
 
-Table properties![](.gitbook/assets/image7.png){width="3.0145833333333334in" height="3.9270833333333335in"}
+![Table properties](.gitbook/assets/image7.png)
 ---------------------------------------------------------------------------------------------------
 
 After adding a table, the table properties can be
@@ -404,7 +404,7 @@ entered.
 **Height** – Height of the rows\
 **Edge thickness** – 0 = no edge, 1 = an edge everywhere
 
-Cell properties![](.gitbook/assets/image22.png){width="3.8152777777777778in" height="2.8958333333333335in"}
+![Cell properties](.gitbook/assets/image22.png)
 --------------------------------------------------------------------------------------------------
 
 It is possible to adjust the properties of a cell. To do so, you need
@@ -624,10 +624,10 @@ In the Docbuilder, it is possible to set up a disclaimer that is shown
 to the user prior to drawing up the contracts. This disclaimer will
 look as follows:
 
-![](.gitbook/assets/image18.png){width="6.297916666666667in" height="1.6277777777777778in"}
+![](.gitbook/assets/image18.png)
 
 This disclaimer can be set up by clicking this
-![](.gitbook/assets/image11.png){width="0.5534722222222223in" height="0.37222222222222223in"}
+![](.gitbook/assets/image11.png)
 icon in the relevant template. The disclaimer can be entered in the large text
 field at the bottom of the pop-up.
 
@@ -638,7 +638,7 @@ In this section, the options of the document builder are explained.
 The six different tabs (Templates, Forms, Articles, Fields,
 Categories and Folders) are explained.
 
-Templates![](.gitbook/assets/image20.png){width="6.100694444444445in" height="3.6256944444444446in"}
+![Templates](.gitbook/assets/image20.png)
 ------------------------------------------------------------------------------------------
 
 All digitized templates are found here. The different folders which
@@ -647,7 +647,7 @@ folder, the templates present in that folder are displayed on the
 right. The green 'New template' button can be used to create a new
 template. A new template is placed in the folder that is open.
 
-New template![](.gitbook/assets/image8.png){width="6.249305555555556in" height="3.7444444444444445in"}
+![New template](.gitbook/assets/image8.png)
 ----------------------------------------------------------------------------------------------
 
 This is where all documents are digitized. The template page is
@@ -689,19 +689,19 @@ Forms
 This is where the forms are drawn up. With the forms, it is possible
 to request certain data within LegalThings.
 
-![](.gitbook/assets/image21.png){width="6.28125in" height="2.797222222222222in"}
+![](.gitbook/assets/image21.png)
 
 With the ‘New form’ button, the LegalThings customer creates a new
 form. Existing forms can be adjusted by clicking on a form. As an
 example, we take the form for adding a client. This form is called
 ‘client organization’. Adjusting these fields is done in the same
 way in which fields are programmed when drawing up a document,
-![](.gitbook/assets/image17.png){width="3.34375in" height="5.234375546806649in"}
+![](.gitbook/assets/image17.png)
 
 Adding filters
 ---------------------
 
-![](.gitbook/assets/image13.png){width="2.047222222222222in" height="2.84375in"}
+![](.gitbook/assets/image13.png)
 
 It is possible to have filters made by LegalThings. Just like drawing
 up forms, this is done under the ‘Forms’ tab. By searching for a 
@@ -712,7 +712,7 @@ If these filters need to be adjusted, this can be done by contacting
 LegalThings. You can do so via the contact details page under the
 table of contents page.
 
-Standard articles![](.gitbook/assets/image14.png){width="3.0590277777777777in" height="4.201388888888889in"}
+![](.gitbook/assets/image14.png)
 ---------------------------------------------------------------------------------------------------
 
 Standard articles are pieces of text that often appear in agreements.
@@ -721,7 +721,7 @@ They can be placed in the text when creating a template. Using the
 article can consist of just one line or an entire document. This makes
 the life of a document builder a lot easier.
 
-Standard fields![](.gitbook/assets/image12.png){width="4.097222222222222in" height="3.9965277777777777in"}
+![Standard fields](.gitbook/assets/image12.png)
 ------------------------------------------------------------------------------------------------
 
 Standard fields are one or more fields that often occur in agreements.
@@ -729,7 +729,7 @@ They can be placed in a step when creating a template. Using the
 ‘+ New field’ button, a standard field can be created. Standard fields
 often go hand in hand with standard articles.
 
-![](.gitbook/assets/image16.png){width="3.8131944444444446in" height="5.499305555555556in"}
+![](.gitbook/assets/image16.png)
 ---------------------------------------------------------------------------------
 
 Categories
@@ -747,7 +747,7 @@ With the ‘+ New category’ button, a new category can be created, and
 with the ‘Update order’ button, you can adjust the order of categories
 in the website after dragging the categories.
 
-Folders![](.gitbook/assets/image25.png){width="4.674305555555556in" height="4.208333333333333in"}
+![Folders](.gitbook/assets/image25.png)
 ---------------------------------------------------------------------------------------
 
 Folders are present for the overview of the template. The order in which

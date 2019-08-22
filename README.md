@@ -16,11 +16,32 @@ A template consists of a step-by-step list, the form, and the text itself. In th
 
 ### Concepts
 
-| Foo | Bar |
-| :--- | :--- |
-| abc | def |
-
-+-----------------------------------+-----------------------------------+ \| Document builder \| The environment in which \| \| \| the documents/templates are \| \| \| created. \| +===================================+===================================+ \| Form \| List of all steps and fields, \| \| \| is on the left side of a \| \| \| template. \| +-----------------------------------+-----------------------------------+ \| If-statement \| An if/then condition. If X, then \| \| \| Y \| +-----------------------------------+-----------------------------------+ \| Mustaches \| To dynamically create a \| \| \| document, mustaches  \| \| \| are used. To make a field \| \| \| editable in the text, the \| \| \| name of the field must be \| \| \| covered by two mustaches on \| \| \| both sides: . Without \| \| \| mustaches, the fields are not \| \| \| usable. \| +-----------------------------------+-----------------------------------+ \| Operator \| A symbol that is used with \| \| \| variables to perform various \| \| \| functions. Think of arithmetic \| \| \| or logical functions. The \| \| \| most commonly used operators \| \| \| are explained below: \| \| \| \| \| \| **Arithmetic operators** \| \| \| \| \| \| - + Add \| \| \| \| \| \| - - Subtract \| \| \| \| \| \| - \* Multiply \| \| \| \| \| \| - / Divide \| \| \| \| \| \| **Comparison operators** \| \| \| \| \| \| - == is equal to \| \| \| \| \| \| - != is not equal to \| \| \| \| \| \| - &gt; is greater than \| \| \| \| \| \| - &lt; is smaller than \| \| \| \| \| \| - &gt;= is greater than or \| \| \| &gt; equal to \| \| \| \| \| \| - &lt;= is smaller than or \| \| \| &gt; equal to \| \| \| \| \| \| **Logical operators** \| \| \| \| \| \| - && AND \("and"\) \| \| \| \| \| \| - \|\| OR \("or"\) \| \| \| \| \| \| - ! NOT \("not"\) \| \| \| \| \| \| **String operators** \| \| \| \| \| \| With the plus symbol \(+\), we can \| \| \| combine two strings. \| \| \| \| \| \| For example: \| \| \| text1="Two strings "; \| \| \| text2="combined"; \| \| \| text3=text1+text2; \| \| \| \| \| \| The content of variable text 3 \| \| \| is now: "Two strings \| \| \| combined". \| +-----------------------------------+-----------------------------------+ \| Programming \| Term for making pieces of text \| \| \| in a template dynamic. \| +-----------------------------------+-----------------------------------+ \| Template \| A template is a digitized \| \| \| document. \| +-----------------------------------+-----------------------------------+ \| Text \| The text is understood to mean \| \| \| the text of a template and is \| \| \| to the right of the form. \| +-----------------------------------+-----------------------------------+ \| User \| The user is understood \| \| \| to mean the end user of \| \| \| the software. \| +-----------------------------------+-----------------------------------+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Foo</th>
+      <th style="text-align:left">Bar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">abc</td>
+      <td style="text-align:left">
+        <p>This is some</p>
+        <p>multiline content</p>
+        <p>and stuff</p>
+        <p>dfsfasdf</p>
+        <p>dsafasdfasdfasdfa</p>
+        <p>dsafasdfadsffasdfadfadfasdfasfads fasdfasdfasfasdfasdfasfadsfasdfasfasdfadsf
+          asfadsfasfadsfasfafasfafadsfasdfasfaafasdf</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
+</table>+-----------------------------------+-----------------------------------+ \| Document builder \| The environment in which \| \| \| the documents/templates are \| \| \| created. \| +===================================+===================================+ \| Form \| List of all steps and fields, \| \| \| is on the left side of a \| \| \| template. \| +-----------------------------------+-----------------------------------+ \| If-statement \| An if/then condition. If X, then \| \| \| Y \| +-----------------------------------+-----------------------------------+ \| Mustaches \| To dynamically create a \| \| \| document, mustaches  \| \| \| are used. To make a field \| \| \| editable in the text, the \| \| \| name of the field must be \| \| \| covered by two mustaches on \| \| \| both sides: . Without \| \| \| mustaches, the fields are not \| \| \| usable. \| +-----------------------------------+-----------------------------------+ \| Operator \| A symbol that is used with \| \| \| variables to perform various \| \| \| functions. Think of arithmetic \| \| \| or logical functions. The \| \| \| most commonly used operators \| \| \| are explained below: \| \| \| \| \| \| **Arithmetic operators** \| \| \| \| \| \| - + Add \| \| \| \| \| \| - - Subtract \| \| \| \| \| \| - \* Multiply \| \| \| \| \| \| - / Divide \| \| \| \| \| \| **Comparison operators** \| \| \| \| \| \| - == is equal to \| \| \| \| \| \| - != is not equal to \| \| \| \| \| \| - &gt; is greater than \| \| \| \| \| \| - &lt; is smaller than \| \| \| \| \| \| - &gt;= is greater than or \| \| \| &gt; equal to \| \| \| \| \| \| - &lt;= is smaller than or \| \| \| &gt; equal to \| \| \| \| \| \| **Logical operators** \| \| \| \| \| \| - && AND \("and"\) \| \| \| \| \| \| - \|\| OR \("or"\) \| \| \| \| \| \| - ! NOT \("not"\) \| \| \| \| \| \| **String operators** \| \| \| \| \| \| With the plus symbol \(+\), we can \| \| \| combine two strings. \| \| \| \| \| \| For example: \| \| \| text1="Two strings "; \| \| \| text2="combined"; \| \| \| text3=text1+text2; \| \| \| \| \| \| The content of variable text 3 \| \| \| is now: "Two strings \| \| \| combined". \| +-----------------------------------+-----------------------------------+ \| Programming \| Term for making pieces of text \| \| \| in a template dynamic. \| +-----------------------------------+-----------------------------------+ \| Template \| A template is a digitized \| \| \| document. \| +-----------------------------------+-----------------------------------+ \| Text \| The text is understood to mean \| \| \| the text of a template and is \| \| \| to the right of the form. \| +-----------------------------------+-----------------------------------+ \| User \| The user is understood \| \| \| to mean the end user of \| \| \| the software. \| +-----------------------------------+-----------------------------------+
 
 ## Steps
 

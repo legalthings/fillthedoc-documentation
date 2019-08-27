@@ -16,7 +16,7 @@ Use the API to create a new document based on a template. Send some initial data
 
 {% page-ref page="api/document-api.md" %}
 
-## Step 3. Download the document and data
+## Step 3. Download the document and user data
 
 One the user has filled out the form, use the API to generate a PDF and fetch the data so it can be processed.
 

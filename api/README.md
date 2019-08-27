@@ -9,10 +9,8 @@ description: Fillthedoc provides a REST API for programmatic access.
 The API uses bearer authentication. Add the following header to each API HTTP request;
 
 ```text
-Authorization: Bearer {KEY}
+Authorization: Bearer <token>
 ```
-
-_\(replace `{KEY}` with your access token API key\)_
 
 ## Creating an access token
 

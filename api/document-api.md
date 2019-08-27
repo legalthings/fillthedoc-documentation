@@ -87,7 +87,7 @@ Example request
         "date": "2019-08-27T00:52:10+00:00"
     },
     "locale": "nl_NL",
-    "locked": false,
+    "step": null,
     "edit_url": "http://localhost/legalthings/o00wocs44sksk0008kw0kc08cwcs0s8sc0k8owgggc0g0os8swg400c00gc8cosg"
 }
 ```
@@ -182,7 +182,7 @@ Unique \(32 bit\) document id
         "date": "2019-08-27T00:59:21+00:00"
     }    
     "locale": "nl_NL",
-    "locked": true
+    "step": "finished"
 }
 ```
 {% endapi-method-response-example %}
@@ -218,8 +218,8 @@ Used for optimistic locking
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="locked" type="boolean" required=false %}
-Locked documents can't be edited by the end user
+{% api-method-parameter name="step" type="string" required=false %}
+Step the user is on or "finished" when done
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="values" type="object" required=false %}
@@ -236,7 +236,7 @@ Request example
 
 ```javascript
 {
-    "locked": false,
+    "step": null,
     "values": {
         "country": "Netherlands"
     }
@@ -296,7 +296,7 @@ Request example
         "date": "2019-08-27T01:03:52+00:00"
     }    
     "locale": "nl_NL",
-    "locked": false,
+    "step": null,
     "edit_url": "http://localhost/legalthings/o00wocs44sksk0008kw0kc08cwcs0s8sc0k8owgggc0g0os8swg400c00gc8cosg"
 }
 ```
@@ -305,7 +305,7 @@ Request example
 {% endapi-method-spec %}
 {% endapi-method %}
 
-Documents are automatically be locked after the user has completed the form. Set the `locked` property to `false` to allow the user to modify the document. The edit url remains unchanged. Once the end user is finished, the webhook \(specified as `callback` when the document was created\) will be called again.
+Documents are automatically be locked after the user has completed the form. This is indicated by the `step` property which is set to `finished`. Set the `step` property to `null` to allow the user to modify the document. The edit url remains unchanged. Once the end user is finished, the webhook \(specified as `callback` when the document was created\) will be called again.
 
 It's possible to modify the data, prior to generating the PDF or HTML document, via the `values` property. The values are merged, even for nested data, as specified by [RFC 7396](https://tools.ietf.org/html/rfc7396) _\(regardless of the `Content-Type`\)_.
 

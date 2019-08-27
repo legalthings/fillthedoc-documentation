@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Getting started](README.md)
 * [Templates](templates/README.md)
   * [Concepts](templates/concepts.md)
   * [Form](templates/form.md)

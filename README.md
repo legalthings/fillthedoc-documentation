@@ -2,7 +2,7 @@
 description: 'fillthedoc is an advanced document engine, powered by JavaScript'
 ---
 
-# Welcome
+# Getting started
 
 ## Step 1. Create a template
 

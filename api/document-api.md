@@ -53,11 +53,6 @@ Example request
 ```javascript
 {
     "id": "o00wocs44sksk0008kw0kc08cwcs0s8sc0k8owgggc0g0os8swg400c00gc8cosg",
-    "organization": {
-        "id": "0460bac2-4d22-46be-ad1f-35c6bf73eb5d",
-        "name": "LegalThings",
-        "slug": "legalthings"
-    },
     "template": {
         "version": "2019-08-19T22:07:51",
         "id": "43448bea-42ad-4c68-9962-2475bec7ecec",
@@ -139,11 +134,6 @@ Unique \(32 bit\) document id
 ```javascript
 {
     "id": "o00wocs44sksk0008kw0kc08cwcs0s8sc0k8owgggc0g0os8swg400c00gc8cosg",
-    "organization": {
-        "id": "0460bac2-4d22-46be-ad1f-35c6bf73eb5d",
-        "name": "LegalThings",
-        "slug": "legalthings"
-    },
     "template": {
         "version": "2019-08-19T22:07:51",
         "id": "43448bea-42ad-4c68-9962-2475bec7ecec",
@@ -252,11 +242,6 @@ Request example
 ```javascript
 {
     "id": "o00wocs44sksk0008kw0kc08cwcs0s8sc0k8owgggc0g0os8swg400c00gc8cosg",
-    "organization": {
-        "id": "0460bac2-4d22-46be-ad1f-35c6bf73eb5d",
-        "name": "LegalThings",
-        "slug": "legalthings"
-    },
     "template": {
         "version": "2019-08-19T22:07:51",
         "id": "43448bea-42ad-4c68-9962-2475bec7ecec",

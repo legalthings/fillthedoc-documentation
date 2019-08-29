@@ -170,7 +170,7 @@ Unique \(32 bit\) document id
     "last_update": {
         "user": null,
         "date": "2019-08-27T00:59:21+00:00"
-    }    
+    },
     "locale": "nl_NL",
     "step": "finished"
 }
@@ -219,7 +219,7 @@ Data of the document
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=100 %}
+{% api-method-response-example %}
 {% api-method-response-example-description %}
 Request example
 {% endapi-method-response-example-description %}
@@ -279,7 +279,7 @@ Request example
     "last_update": {
         "user": "a29bf252685445cdc66e1be76403304a296645e7e1d5cf27ff5c7cb8cf4d7c00",
         "date": "2019-08-27T01:03:52+00:00"
-    }    
+    },
     "locale": "nl_NL",
     "step": null,
     "edit_url": "http://localhost/legalthings/o00wocs44sksk0008kw0kc08cwcs0s8sc0k8owgggc0g0os8swg400c00gc8cosg"

@@ -320,7 +320,7 @@ Unique \(32 bit\) document id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

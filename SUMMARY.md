@@ -9,4 +9,5 @@
 * [API](api/README.md)
   * [Document API](api/document-api.md)
   * [Template API](api/template-api.md)
+* [Embedding](embedding.md)
 

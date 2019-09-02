@@ -2,7 +2,7 @@
 
 * [Getting started](README.md)
 * [Templates](templates/README.md)
-  * [Concepts](templates/concepts.md)
+  * [Glossary](templates/concepts.md)
   * [Form](templates/form.md)
   * [Content](templates/content.md)
   * [Settings](templates/settings.md)

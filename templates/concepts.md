@@ -1,8 +1,8 @@
 ---
-description: General concept for building templates
+description: General concepts for building templates
 ---
 
-# Concepts
+# Glossary
 
 <table>
   <thead>

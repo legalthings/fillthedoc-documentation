@@ -10,11 +10,11 @@ description: >-
 
 The document is completed according to the steps. The steps contain all fields.
 
-![](../.gitbook/assets/image5.png)To create a step, the ‘Step’ button must be clicked.
+![](../.gitbook/assets/image%20%289%29.png) To create a step, the ‘Step’ button must be clicked.
 
-The step specifications can then be entered. This looks as follows:
+The step specifications can then be entered. This looks as follows: 
 
-### ![Label](../.gitbook/assets/image3.png)
+![](../.gitbook/assets/image%20%2861%29.png)
 
 The label is the name of the step, visible to the user
 
@@ -22,7 +22,7 @@ The label is the name of the step, visible to the user
 
 The field group is the subdivision of the different steps. This is used to invoke the fields in the text.
 
-Suppose you give step 1 the field group 'introduction' and step 2 the field group ‘data’, then all fields from step 1 in the text are invoked with and step 2 . This ensures that one field can have the same field name in both step 1 and step 2 without the same being entered in both fields.
+Suppose you give step 1 the field group 'introduction' and step 2 the field group ‘data’, then all fields from step 1 in the text are invoked with `{{introduction.date}}` and in step 2 with `{{data.field}}`. This ensures that one field can have the same field name in both step 1 and step 2 without the same being entered in both fields.
 
 ### Scroll to article
 
@@ -32,9 +32,9 @@ For instance, to scroll article 4, a '4' must be entered in this component. This
 
 ### Conditions
 
-The conditions state when a step does or does not appear. This is further explained in the "Field completion" section.
+The conditions state when a step does or does not appear. This is further explained in the "Filling in fields" section.
 
-### Accompanying text
+### Leading text
 
 Here, the step can be clarified with the help of text, a link and/or a video. This text, a link and/or a video is displayed instead of the text of the document to the right of the step. This can help clarify difficult steps or options.
 
@@ -44,7 +44,7 @@ The tip is one or more sentences that appear in a ‘?’ next to the step. This
 
 ## Fields
 
-There are 12 types of fields that can be used. These fields are explained below.
+There are 12 types of fields that can be used. You can add a field by dragging it from the sidebar to a step. These fields are explained below.
 
 ### Text
 
@@ -76,7 +76,7 @@ This field is an extensive text field. The user can enter multiple sentences and
 
 ### Selection list
 
-This field is a drop-down selection list from which the user can select one option.
+This field is a drop-down selection list from which the user can select one option. 
 
 ### Option group
 
@@ -90,9 +90,23 @@ The check box gives the user one option for which they can choose to select or n
 
 This field is a rating field that is often used in surveys. Above the balls is a scale that can be entered \(such as 1 to 5\). To the left of the field are the subjects to be assessed.
 
+![](../.gitbook/assets/image%20%2832%29.png)
+
 ### Expression
 
 This field cannot be entered by the user. This field is used to program. It can be used to, among other things, automatically calculate a date, perform calculations or to combine pieces of text. This field is explained later in the manual.
+
+We will go into a few expressions in this documentation. If you need something that isn't documented, you can generally find it by googling what you need in combination with the word 'JavaScript'. If that doesn't help, you can reach out to us and we'll be more than happy to help you out!
+
+You can use an If else statement by using the following syntax  
+Condition ? true : false  
+eg: `Calc.Answer == 5 ? Calc.total = 100 : Calc.total = 0`  
+Here the value of Calc.total will be 100 if the answer of the user in calc.answer was 5. Otherwise Calc.total will hold the value 0.
+
+When you're calculation the sum of two numbers, you have to use parseNumber\(x\), since the program recognizes the numbers and string, which will cause 1 + 2 to be 12.  
+Use: `Result = parseNumber(x) + parseNumber(y)` instead
+
+You can always do calculations with the arithmetic operators as shows in \#Glossary
 
 ## Filling in fields
 
@@ -108,7 +122,7 @@ This is the name of the field. This could be a question about, for instance, wha
 
 #### Field name
 
-The field name is very important for programming the fields in the text. The field can be invoked in the text using the field name. A field is invoked in the text with a fixed format: . The field group is explained in the ‘Steps’ section. Suppose a step has the name ‘data’ and the field name has the name ‘name\_company,’ then the field needs to be programmed in in the text in the following way: . If the field is then completed, this appears in the text. It is important that the field names are not the same to prevent overlap. If the field name consists of different words, an underscore \( \_ \) always needs to be placed between the words.
+The field name is very important for programming the fields in the text. The field can be invoked in the text using the field name. A field is invoked in the text with a fixed format: `{{fieldgroup.fieldname}}`. The field group is explained in the ‘Steps’ section. Suppose a step has the name ‘data’ and the field name has the name ‘name\_company,’ then the field needs to be programmed in in the text in the following way: `{{data.name_company}}`. If the field is then completed, this appears in the text. It is important that the field names are not the same to prevent overlap. If the field name consists of different words, an underscore \( \_ \) always needs to be placed between the words.
 
 #### Accompanying text
 
@@ -122,7 +136,7 @@ This tickable box ensures that the user cannot continue unless they complete thi
 
 This can be used to indicate when a field should or should not be displayed. This field uses the field group, field name and an operator.
 
-Suppose there are two fields, field 1 \(a selection list with option Yes or No\) and field 2 \(a Text field\). Field 2 should only be displayed if field 1 is set to Yes, then the following is shown in field 2 \(the mustaches are NOT needed for this!\): fieldgroup.field1 == “Yes”. This means that field 2 is displayed if the selection in field 1 is Yes. In the conditions options, multiple conditions can be included using logical operators. All standard calculation rules apply to the conditions.
+Suppose there are two fields, field 1 \(a selection list with option Yes or No\) and field 2 \(a Text field\). Field 2 should only be displayed if field 1 is set to Yes, then the following is shown in field 2 \(the mustaches are NOT needed for this!\): `fieldgroup.field1 == “Yes”`. This means that field 2 is displayed if the selection in field 1 is Yes. In the conditions options, multiple conditions can be included using logical operators. All standard calculation rules apply to the conditions.
 
 ### Specific options
 
@@ -164,7 +178,9 @@ These options are special to the Likert scale. The Questions are at the left sid
 
 ## Standard Fields
 
-### ![Standard fields](../.gitbook/assets/image12.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
-Standard fields are one or more fields that often occur in agreements. They can be placed in a step when creating a template. Using the ‘+ New field’ button, a standard field can be created. Standard fields often go hand in hand with standard articles.
+Standard fields are one or more fields that often occur in agreements. They can be placed in a step when creating a template. Using the ‘+ New field’ button, a standard field can be created. You can also also always safe new step or field as a standard field while you're working on a form. Standard fields often go hand in hand with standard articles. They're located under the normal fields and you can insert them by clicking.  
+
+![](../.gitbook/assets/schermopname.png)
 

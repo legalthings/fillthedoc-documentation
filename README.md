@@ -6,7 +6,7 @@ description: 'fillthedoc is an advanced document engine, powered by JavaScript'
 
 ## Step 1. Create a template
 
-The template consists of a form, which may be filled out by the end user, and text content. The content contains placeholders that are filled with the data of the form. More advanced functions can be used, like if statements and formatting.
+The template consists of a form, which may be filled out by the end user, and text content. The content contains placeholders that are filled with the data of the form. More advanced functions can be used, like expressions and formatting.
 
 {% page-ref page="templates/" %}
 
@@ -18,5 +18,5 @@ Use the API to create a new document based on a template. Send some initial data
 
 ## Step 3. Download the document and user data
 
-One the user has filled out the form, use the API to generate a PDF and fetch the data so it can be processed.
+Once the user has filled out the form, use the API to generate a PDF and fetch the data so it can be processed.
 

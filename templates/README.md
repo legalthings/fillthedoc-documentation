@@ -6,35 +6,25 @@ description: >-
 
 # Templates
 
-## Creating a new template
+## Templates
 
-Press the green 'New template' button to create a new template. It will open a new page.
+![](../.gitbook/assets/image%20%2856%29.png)
 
-### ![New template](../.gitbook/assets/image8.png)
+Here you can view and edit all your templates. You can create folders where templates can be dragged to in order to help sorting them. To make a new template, you can click on the green 'new' button. A template will then be made in the map that's open.
 
-This is where all documents are digitized. The template page is divided into 3 parts.
+![](../.gitbook/assets/image%20%2842%29.png)
 
-On the left are the fields that can be added to steps. Below that are the default fields, more about that under the ‘Fields’ header.
+The template page can be divide in 3 parts
 
-The form \(Form\) with all used steps are fields are displayed in the middle. To add a step, the ‘+ Stap’ button is used. A field can only be added if a step has been created and the new fields are added to the step highlighted in blue. A step can be minimized, edited and deleted \(from left to right next to Step example\). If the template is saved, the form receives the same name as the name of the template. The name can now be adjusted where it says ‘Untitled Template’. A description of the agreement can be added below that.
+On the left are all the different kinds of fields that can be added to a step. Below that are standard fields as created by the user. \(See \#FillTheDoc UI for info on standard fields\)
 
-To the right of the blank field, the text of the agreement with all fields will appear.
+In the middle part, you can see the Form with all created steps and fields. Steps can be minimized, edited and deleted. You can add a field by dragging it to one of the created steps. \(See \#Form\)
 
-If the ‘Edit’ button is clicked, you can edit the template. To test this and see what can be changed, you can use the ‘View’ button. Here, you can go over the template as it if is on the website.
+In the right part of the screen, you can see the content. Here you can add all the text and design your template to your liking. Make sure you click on save from time to time. You can view your document by clicking on view, this will show the document in its final form and allows you to fill in your fields. You can go back to editing by clicking on edit again. \(To see how to add your dynamic fields in the text, check out \#Content\)
 
-There is the option to save and publish the template. When publishing, the template is shown on the website and the user can make use of the agreement.
+When you're done editting your template and are ready to use it, click on the green 'publish' button. 
 
-A license is the price of the agreement for the user and ‘Categories’ are categories under which the agreement can be found on the website.
-
-The ‘Note’ symbol \(exclamation mark in warning triangle\) is the disclaimer.
-
-## Folders
-
-### ![Templates](../.gitbook/assets/image20.png)
-
-Templates can be organized in folders. Folders are nested; each folder may have subfolders.
-
-The different folders which the templates can be dragged to are shown under Folders. For each folder, the templates present in that folder are displayed on the right. The green 'New template' button can be used to create a new template. A new template is placed in the folder that is open.
+![](../.gitbook/assets/image%20%2853%29.png)
 
 ## Using an existing document as template
 

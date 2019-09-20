@@ -56,9 +56,9 @@ Only numbers can be entered in this fields, letters are not accepted. It is poss
 
 ### Number with unit
 
-Only numbers can be entered in this fields, letters are not accepted. The difference with the Number field is that a unit is also added to the number. This can be anything from % to year or month.
+Only numbers can be entered in this fields, letters are not accepted. The difference with the Number field is that a unit is also added to the number. This can be anything from % to year or month. You can also add a plural so when you, for example, enter 1, it gives you month, and when you enter 2+, it returns months.
 
-### Amount
+### Price
 
 This is a Number field with a currency type in front of it. This field is mainly intended to clarify that the user must enter an amount. Standard numbers with two decimals can be entered here.
 
@@ -70,27 +70,31 @@ This field returns a date.
 
 Only an e-mail address can be entered in this field, the user may not continue if an @ is not used in the field.
 
-### Free text
+### Text area
 
 This field is an extensive text field. The user can enter multiple sentences and paragraphs here.
 
-### Selection list
+### Choice list
 
 This field is a drop-down selection list from which the user can select one option. 
 
 ### Option group
 
-This field offers the user a number of options to choose from. It is possible to have the user select multiple options.
+This field offers the user a number of options to choose from. It is possible to have the user select multiple options by ticking the multiple selection box.
 
 ### Check box
 
-The check box gives the user one option for which they can choose to select or not.
+The check box gives the user one option for which they can choose to select or not. You can refer to a checkbox by checking it's checked \(true\) or unchecked \(false\) like so: `{{#fieldgroup.field == true}}this is readable when box is checked{{/}}`
 
 ### Likert scale
 
 This field is a rating field that is often used in surveys. Above the balls is a scale that can be entered \(such as 1 to 5\). To the left of the field are the subjects to be assessed.
 
 ![](../.gitbook/assets/image%20%2832%29.png)
+
+You can refer to an answer given as follows:  
+`{{#fieldgroup.field.0 == yes}}text shows if answer to first question is yes{{/}}`  
+Here, the text shows up if the answer to the first question is yes.
 
 ### Expression
 
@@ -156,10 +160,6 @@ Here the minimum and maximum value that may be entered can be specified. Present
 
 Here you can indicate how many decimals the entered number may have. Present in the Number and Number with unit fields.
 
-#### Units
-
-For the use of units behind a number. This can be anything from % to month and year. For each unit, a singular and plural variant needs to be entered. You have the option of adding multiple units. Present in the Number with unit field.
-
 #### Default current day
 
 If checked, the date of the current date is filled in by default. Present in the date field.
@@ -167,14 +167,6 @@ If checked, the date of the current date is filled in by default. Present in the
 #### Options
 
 Here, the options that can be selected for a selection list or option group can be entered. An option consists of a Value and a Text. In the Text, you enter what the uses sees as a choice. The Value is that which is linked to the text and can be displayed in the text of an agreement or used as a condition. It is possible to add additional options. Present in the selection list and option group fields.
-
-#### Multiple selection
-
-If this option is checked, the user can select multiple options from the Option group. Present in the option group field.
-
-#### Questions and Possible answers
-
-These options are special to the Likert scale. The Questions are at the left side of the scale and the Possible answers are at the top of the scale. Present in the Likert scale field.
 
 ## Standard Fields
 

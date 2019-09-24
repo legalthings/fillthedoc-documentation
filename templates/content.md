@@ -60,22 +60,27 @@ It is possible to use other operators \(see concepts\) besides the == symbol fro
 
 For example: `{{#x == 5}}` and `{{#x == "cow"}}`
 
-It is possible to make a sentence from a numbered list dynamic. The numbering of the list then continues.
-
-Suppose there is a list with four sentences that are numbered 1 through 4. If sentence 2 is not displayed, then sentence 3 receives the number 2 and sentence 4 receives the number 3. This way, there are no holes in the numbering. NOTE! The sentence must be empty in order to not be displayed, even a space can cause the sentence to appear.
-
-Creating a statement is possible with the help of the following fields: Selection list, Check box, Likert scale and Number with unit.
 
 
+For an **option group**, the following code needs to be used:  
 
-For an option group, the following code needs to be used:  
-
-`{{#optionsFieldName.indexOf("Option3" > -1}}Text for tickable box 3{{/}}`
+`{{#optionsFieldName.indexOf("Option3") > -1}}Text for tickable box 3{{/}}`
 
 When a tickable box isn't ticket by the user, it returns the value -1. When it's checked, it returns the value 0 and when there is a list of things that can be checked, it will assign values increasingly: 1, 2, 3 etc.  
 When you want to show a certain text under the condition that one of the tickable boxes in a field is checked, you should there check if its value is not -1
 
 You can also use: `{{#optionsFieldName.includes("Option3")}}Text for tickable box 3{{/}}`
+
+\`\`
+
+You can refer to a **checkbox** by checking it's checked \(true\) or unchecked \(false\) like so: `{{#fieldgroup.field == true}}this is readable when box is checked{{/}}`
+
+\`\`
+
+You can refer to an answer in a **Likert Scale** as follows:  
+`{{#fieldgroup.field.0 == yes}}text shows if answer to first question is yes{{/}}`
+
+Here, the text shows up if the answer to the first question is yes.
 
 ## If-statement
 

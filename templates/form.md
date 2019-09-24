@@ -84,17 +84,13 @@ This field offers the user a number of options to choose from. It is possible to
 
 ### Check box
 
-The check box gives the user one option for which they can choose to select or not. You can refer to a checkbox by checking it's checked \(true\) or unchecked \(false\) like so: `{{#fieldgroup.field == true}}this is readable when box is checked{{/}}`
+The check box gives the user one option for which they can choose to select or not. 
 
 ### Likert scale
 
 This field is a rating field that is often used in surveys. Above the balls is a scale that can be entered \(such as 1 to 5\). To the left of the field are the subjects to be assessed.
 
 ![](../.gitbook/assets/image%20%2832%29.png)
-
-You can refer to an answer given as follows:  
-`{{#fieldgroup.field.0 == yes}}text shows if answer to first question is yes{{/}}`  
-Here, the text shows up if the answer to the first question is yes.
 
 ### Expression
 

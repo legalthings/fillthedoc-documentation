@@ -8,7 +8,6 @@
   * [Content](templates/content.md)
   * [Settings](templates/settings.md)
   * [Example](templates/example.md)
-  * [Detailed explanation](templates/examples.md)
 * [API](api/README.md)
   * [Document API](api/document-api.md)
   * [Template API](api/template-api.md)

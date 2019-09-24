@@ -96,14 +96,14 @@ This field is a rating field that is often used in surveys. Above the balls is a
 
 This field cannot be entered by the user. This field is used to program. It can be used to, among other things, automatically calculate a date, perform calculations or to combine pieces of text. This field is explained later in the manual.
 
-We will go into a few expressions in this documentation. If you need something that isn't documented, you can generally find it by googling what you need in combination with the word 'JavaScript'. If that doesn't help, you can reach out to us and we'll be more than happy to help you out!
+We will go into a few expressions in this documentation. If you need something that isn't documented, you can generally find it by googling what you need in combination with the word 'JavaScript'. 
 
 You can use an If else statement by using the following syntax  
 Condition ? true : false  
 eg: `Calc.Answer == 5 ? Calc.total = 100 : Calc.total = 0`  
 Here the value of Calc.total will be 100 if the answer of the user in calc.answer was 5. Otherwise Calc.total will hold the value 0.
 
-When you're calculation the sum of two numbers, you have to use parseNumber\(x\), since the program recognizes the numbers and string, which will cause 1 + 2 to be 12.  
+When you're calculation the sum of two numbers, you have to use parseNumber\(x\), since the program recognizes the numbers as strings, which will cause 1 + 2 to be 12.  
 Use: `Result = parseNumber(x) + parseNumber(y)` instead
 
 You can always do calculations with the arithmetic operators as shows in \#Glossary

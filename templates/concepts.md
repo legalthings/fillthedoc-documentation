@@ -22,10 +22,10 @@ description: General concepts for building templates
     </tr>
     <tr>
       <td style="text-align:left">Mustaches</td>
-      <td style="text-align:left">To dynamically create a document, mustaches {{ }} are used. To make a
-        field editable in the text, the name of the field must be covered by two
-        mustaches on both sides: {{ field }}. Without mustaches, the fields are
-        not usable.</td>
+      <td style="text-align:left">To dynamically create a document, mustaches <code>{{ }}</code> are used.
+        To make a field editable in the text, the name of the field must be covered
+        by two mustaches on both sides: <code>{{ field }}</code>. Without mustaches,
+        the fields are not usable.</td>
     </tr>
     <tr>
       <td style="text-align:left">Operator</td>

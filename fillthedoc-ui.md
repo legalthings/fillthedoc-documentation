@@ -1,14 +1,8 @@
 ---
-description: >-
-  Features in the UI explained (Templates, Standard texts, Fields and Headers /
-  Footer)
+description: 'Standard texts, Fields and Headers / Footer'
 ---
 
-# FillTheDoc UI
-
-## Templates
-
-Described in &lt;Templates&gt;
+# Customization
 
 ## Standard texts
 

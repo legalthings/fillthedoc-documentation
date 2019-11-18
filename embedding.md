@@ -36,7 +36,7 @@ The iframe will send a message to the parent window when the user finishes the f
 ```markup
 <script>
   window.addEventListener("message", function (event) {
-    if (event.origin !== "http://localhost:8000") return;
+    if (event.origin !== "https://fillthedoc.com") return;
 
     // Optionally use document data
     let documentData = event.data;
@@ -80,7 +80,7 @@ You should NOT rely on the message for processing the data. Instead, always spec
       window.addEventListener("message", documentCompleted, false);
 
       function documentCompleted(event) {
-        if (event.origin !== "http://localhost:8000") return;
+        if (event.origin !== "https://fillthedoc.com") return;
 
         // Optionally use document data
         let documentData = event.data;

@@ -13,6 +13,12 @@ Create a new document based on a template.
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=false %}
+"application/json"
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
 {% api-method-body-parameters %}
 {% api-method-parameter name="template" type="string" required=true %}
 Template id or reference

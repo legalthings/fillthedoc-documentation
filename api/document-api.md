@@ -35,22 +35,6 @@ Webhook URL that's called when the document is filled out
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=100 %}
-{% api-method-response-example-description %}
-Example request
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-    "template": "cao-employee",
-    "values": {
-        "cao_name": "CAO Employee Pension",
-        "pension_fund": "P.A."
-    }
-}
-```
-{% endapi-method-response-example %}
-
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 
@@ -96,6 +80,18 @@ Example request
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% code title="Example request body" %}
+```text
+{
+    "template": "cao-employee",
+    "values": {
+        "cao_name": "CAO Employee Pension",
+        "pension_fund": "P.A."
+    }
+}
+```
+{% endcode %}
 
 The `template` property is required and can be a template id or template reference. When creating a new document, the latest version of the template is always used. Only published templates can be used to create a document.
 
@@ -225,21 +221,6 @@ Data of the document
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=100 %}
-{% api-method-response-example-description %}
-Request example
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-    "step": null,
-    "values": {
-        "country": "Netherlands"
-    }
-}
-```
-{% endapi-method-response-example %}
-
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 
@@ -295,6 +276,17 @@ Request example
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% code title="Example request body" %}
+```text
+{
+    "step": null,
+    "values": {
+        "country": "Netherlands"
+    }
+}
+```
+{% endcode %}
 
 Documents are automatically be locked after the user has completed the form. This is indicated by the `step` property which is set to `finished`. Set the `step` property to `null` to allow the user to modify the document. The edit url remains unchanged. Once the end user is finished, the webhook \(specified as `callback` when the document was created\) will be called again.
 
